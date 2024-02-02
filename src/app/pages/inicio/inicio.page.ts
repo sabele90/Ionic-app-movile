@@ -22,6 +22,11 @@ componentes: Componente[] = [
     name: 'Avatar',
     redirectTo: '/avatar', 
   },
+  {
+    icon: 'radio-button-on',
+    name: 'Buttons and Router',
+    redirectTo: '/buttons', 
+  },
 ]
   constructor() { }
 
