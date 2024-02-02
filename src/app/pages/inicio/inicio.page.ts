@@ -32,6 +32,11 @@ componentes: Componente[] = [
     name: 'Cards',
     redirectTo: '/card', 
   },
+  {
+    icon: 'checkmark-circle-outline',
+    name: 'Checkbox',
+    redirectTo: '/check', 
+  },
 ]
   constructor() { }
 
