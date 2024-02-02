@@ -27,6 +27,11 @@ componentes: Componente[] = [
     name: 'Buttons and Router',
     redirectTo: '/buttons', 
   },
+  {
+    icon: 'card',
+    name: 'Cards',
+    redirectTo: '/card', 
+  },
 ]
   constructor() { }
 
