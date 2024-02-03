@@ -1,0 +1,42 @@
+<app-header titulo="DateTime"></app-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Birth data</ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label
+        >Day of Birth: {{ selectedBirth | date: 'dd MMMM yyyy' }}</ion-label
+      >
+    </ion-item>
+    <ion-datetime
+      presentation="date"
+      [showDefaultTitle]="true"
+      [(ngModel)]="selectedBirth"
+      (ionChange)="handleBirth($event)"
+      [showDefaultButtons]="true"
+    >
+      <span slot="title">Select Date</span>
+    </ion-datetime>
+    <ion-list-header>
+      <ion-label>Restrictions</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label
+        >Selected Date: {{ selectedDate | date: 'dd MMMM yyyy' }}</ion-label
+      >
+    </ion-item>
+    <ion-datetime
+      min="2015-01-01"
+      max="2015-12-31"
+      [(ngModel)]="selectedDate"
+      (ionChange)="handleDateChange($event)"
+      [showDefaultButtons]="true"
+    >
+      <span slot="title">Select Date</span>
+      ></ion-datetime
+    >
+  </ion-list>
+</ion-content>
