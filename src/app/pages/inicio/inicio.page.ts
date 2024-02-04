@@ -57,6 +57,11 @@ componentes: Componente[] = [
     name: 'Infinite Scroll',
     redirectTo: '/infinite-scroll', 
   },
+  {
+    icon: 'hammer',
+    name: 'Input - Forms',
+    redirectTo: '/input', 
+  },
 ]
   constructor() { }
 
