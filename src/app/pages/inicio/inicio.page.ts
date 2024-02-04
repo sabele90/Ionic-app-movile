@@ -62,6 +62,11 @@ componentes: Componente[] = [
     name: 'Input - Forms',
     redirectTo: '/input', 
   },
+  {
+    icon: 'list',
+    name: 'List - Sliding',
+    redirectTo: '/list', 
+  },
 ]
   constructor() { }
 
